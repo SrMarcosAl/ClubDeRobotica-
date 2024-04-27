@@ -1,0 +1,156 @@
+/** Estilos Generales **/
+
+html *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-size: 1.1 rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul, li{
+    list-style: none; /* para que no aparezca el punto en la lista*/
+}
+
+/** HEADER **/
+.header-landing{
+    width: 100%;
+    height: 10vh; /**/
+    display: flex;
+}
+.wrap-logo{
+    background-image: linear-gradient(135deg, #1a1e29 40%, #132d46 60%);
+    /*background-color: #132d46;*/   
+    flex-grow: 1;
+    position: relative;
+}
+
+
+/** INICIO **/
+.hero-section{
+    width: 100%;
+    height: 90vh;
+    /*display: flex;*/
+}
+.div-global{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.wrap-hero-section{
+    width: 100%;
+    height: 100%;
+    background-image: url('img/inicio.jpg');
+    background-size: cover; /* Esto asegura que la imagen cubra todo el div */
+    background-repeat: no-repeat; /* Esto evita que la imagen se repita */
+    position: relative;
+    z-index: 0;
+}
+.wrap-hero-section-transparencia{
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.35); 
+    position: absolute; /* Posiciona sobre el div1 */
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la posición exacta del centro */
+    z-index: 1; /* Asegura que div2 esté encima de div1 */
+    filter: brightness(150%); 
+}
+
+
+.wrap-titulo-principal{
+    position: absolute; /* Posiciona sobre el div1 */
+    top: 40%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la posición exacta del centro */
+    z-index: 2; /* Asegura que div2 esté encima de div1 */
+    width: 90%;
+    height: 50%;
+    background-image: url('img/ClubdeRobótica.svg');
+    background-size: contain; /* Esto asegurará que la imagen cubra todo el div */
+    background-repeat: no-repeat;
+    background-position: center center;
+
+  }
+
+  .contenedor-boton {
+    display: flex; /* Utiliza flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 80px; /* Ancho del contenedor */
+    height: 40px; /* Alto del contenedor */
+    background-color: transparent; /* Fondo transparente */
+    border: 2px solid white; /* Borde blanco */
+    border-radius: 20px; /* Redondea las esquinas para hacerlo circular */
+    font-size: 16px; /* Tamaño del texto */
+    /*font-family: Arial, sans-serif; Tipo de fuente */
+    position: absolute; /* Posiciona sobre el div1 */
+    top: 80%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la posición exacta del centro */
+    z-index: 2; /* Asegura que div2 esté encima de div1 */
+  }
+
+  .contenedor-boton a {
+    color: white; /* Color de texto */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+  }
+
+  .contenedor-boton:hover {#061A1E
+    display: flex; /* Utiliza flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 80px; /* Ancho del contenedor */
+    height: 40px; /* Alto del contenedor */
+    background-color: rgba(6, 26, 30, 0.5); /* Fondo transparente */
+    border: 3px solid white; /* Borde blanco */
+    border-radius: 20px; /* Redondea las esquinas para hacerlo circular */
+    font-size: 16px; /* Tamaño del texto */
+    font-family: Arial, sans-serif; /* Tipo de fuente */
+    position: absolute; /* Posiciona sobre el div1 */
+    top: 80%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la posición exacta del centro */
+    z-index: 2; /* Asegura que div2 esté encima de div1 */
+  }
+
+
+  /*    SECCION NOSOTROS     */
+  .section-nosotros-section{
+    height: 550px;
+    width: 100%;
+  }
+  .wrap-nosotros-section{
+    display: flex;
+    align-items: center; /* Esto centra verticalmente el contenido */
+    justify-content: center; /* Esto centra horizontalmente el contenido, si también lo necesitas */
+    padding-inline: 10%;
+    padding-block: 10%;
+  }
+  .wrap-img-nosotros-section{
+    flex-grow: 1;
+    margin: 20px;
+    background-image: url('img/nosotros.jpg');
+    background-size: cover; /* Esto asegura que la imagen cubra todo el div */
+    background-repeat: no-repeat; /* Esto evita que la imagen se repita */
+    border-radius: 25px;
+  }
+
+
+
+
+
+
+
+
+
+
